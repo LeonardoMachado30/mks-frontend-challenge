@@ -1,8 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect } from "react";
 import { CardList, Header, Footer, ShoppingCart } from "../components/index";
+import Products from "../services/service";
 
 export default function Home() {
+  useEffect(() => {
+    Products.get().then((resp) => {
+      console.log(resp.data);
+    });
+  });
   return (
     <>
       <Head>

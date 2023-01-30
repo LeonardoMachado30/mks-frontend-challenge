@@ -24,3 +24,11 @@ p{
   display: flex;
   flex-direction: row;
 }
+
+button{
+  cursor: pointer;
+}
+
+.active ~ button:active {
+  background-color: #fff !important;
+}

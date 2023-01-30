@@ -3,7 +3,7 @@ import Product from "./Product";
 
 function ShoppingCart() {
   return (
-    <Container>
+    <Container className={`active`}>
       <CartBody>
         <div className="flex-row">
           <h3>Carrinho de compras</h3>
